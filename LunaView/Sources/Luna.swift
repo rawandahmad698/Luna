@@ -96,79 +96,9 @@ class Luna: UIView {
             // Fallback on earlier versions
         }
        
-        
-        
-        /*
-        let luna = UIView()
-       // luna.isUserInteractionEnabled = true
-      
-        
-        let descStrWidth = messageDescription.stringWidth
-        let descStrHeight = messageDescription.stringHeight
-        
-        let titleStrHeight = messageTitle.stringHeight
-        let titleStrWidth = messageTitle.stringWidth
 
-        
-        
-        let titleLabel = UILabel()
-        titleLabel.text = messageTitle
-        titleLabel.font = UIFont(name: "avenirnext-demibold", size: 13)
-        titleLabel.textColor = UIColor(hexString: "4A4A4A")
-        titleLabel.numberOfLines = 0
-        
-        
-        let titleDesc = UILabel()
-        titleDesc.text = messageDescription
-        titleDesc.font = UIFont(name: "avenirnext-regular", size: 9)
-        titleDesc.textColor = UIColor(hexString: "4A4A4A")
-        titleDesc.numberOfLines = 0
-        
-        
-        
-        
-
-        luna.frame = CGRect(x: 16, y: 40, width: screenWidth - 30, height: titleStrHeight + descStrHeight)
-        luna.center.x = luna.center.x
-        luna.backgroundColor = .white
-        luna.addShadow(radius: 11, opacity: 0.2)
-        luna.layer.cornerRadius = 10
-        
-        titleDesc.frame = CGRect(x: luna.frame.minX + 3, y: titleLabel.frame.maxY + titleStrHeight, width: luna.frame.width, height: descStrHeight)
-        
-        
-        titleLabel.frame = CGRect(x: luna.frame.minX + 3, y: 8, width: titleStrWidth, height: titleStrHeight)
-      
-        luna.addSubview(titleLabel)
-        luna.addSubview(titleDesc)
-        self.addSubview(luna)
-        luna.popIn()
-        
-        
-        _ = Timer.scheduledTimer(withTimeInterval: dissmissDuration, repeats: false) { timer in
-            luna.popOut()
-        } */
-        
-       /* if touchOutsideToHide {
-            let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-            tap.numberOfTapsRequired = 1
-            self.addGestureRecognizer(tap)
-            luna.addGestureRecognizer(tap)
-            print("touch ouside is true")
-
-        } else {
-            print("touch ouside is false")
-        } */
-        
-        
-        
     }
-    
-    func imageForEmptyDataSet(in scrollView: UIScrollView) -> UIImage? {
-        return nil
-    }
-    
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("touch begin")
         super.touchesBegan(touches, with: event)
